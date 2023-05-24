@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #727272, #686868, #434343);
+  background-repeat: repeat;
+ 
+}
+
+.full {
+  padding: 60px;
+  box-sizing: border-box;
+  height: calc(100vh - 120px);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 60px;
+
+  animation: entering-top 1s;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 200px;
+
+  row-gap: 20px;
+
+  padding: 0;
+}
+
+a {
+  display: flex;
+  align-items: center;
+
+  height: 76px;
+  width: 310px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-size: 20px;
+
+  padding: 0;
+
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.telefonedebora {
+  background-color: #303030;
+
+  animation: entering-left 3s;
+}
+
+.telefonepriori {
+  background-color: #303030;
+
+  animation: entering-right 3s;
+}
+
+.instagram {
+  background-color: #303030;
+
+  animation: entering-right 3s;
+}
+
+.maisinfo {
+  background-color: #909090;
+  display: flex;
+  justify-content: center;
+
+  animation: entering-left 3s;
+}
+
+a .imgtelefone {
+  height: 115px;
+  width: 115px;
+  margin-left: -15px;
+}
+
+a .imginstagram {
+  height: 115px;
+  width: 115px;
+  margin-left: -15px;
+}
+
+.textopriori {
+  color: #939393;
+  font-size: 30px;
+  font-weight: bolder;
+
+  margin-left: 38px;
+ }
+
+ .textodebora {
+  color: #939393;
+  font-size: 30px;
+  font-weight: bolder;
+
+  margin-left: 27px;
+ }
+
+ .textoig {
+  color: #939393;
+  font-size: 30px;
+  font-weight: bolder;
+
+  margin-left: 11px;
+}
+
+.textomaisinfo {
+  color: #303030;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+@keyframes entering-left {
+  0% {
+    opacity:0 ;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity:1 ;
+    transform: translateX(0);
+  }
+}
+
+@keyframes entering-right {
+  0% {
+    opacity:0 ;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity:1 ;
+    transform: translateX(0);
+  }
+}
+
+@keyframes entering-top {
+  0% {
+    opacity:0 ;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity:1 ;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
